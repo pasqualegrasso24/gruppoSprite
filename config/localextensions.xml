@@ -9,17 +9,23 @@
 		<path dir="${HYBRIS_BIN_DIR}" />
 		
 
-										
-		<!-- ext-platform -->
+		<extension name="admincockpit" />
+        <extension name="backoffice" />
+        <extension name="cockpit" />
+        <extension name="hmc" />
+        <extension name="mcc" />
+        <extension name="platformhmc" />                                               
+        <extension name="mediaconversion" /> 		
+		<!-- ext-platform 
 		<extension name="admincockpit" />
 		<extension name="backoffice" />
 		<extension name="cockpit" />
 		<extension name="hmc" />
 		<extension name="mcc" />
-		<extension name="platformhmc" />
+		<extension name="platformhmc" />-->
 
 										
-		<!-- ext-commerce -->
+		<!-- ext-commerce 
 		<extension name="btg" />
 		<extension name="btgcockpit" />
 		<extension name="commercesearch" />
@@ -39,18 +45,18 @@
 		<extension name="b2badmincockpit" />
 		<extension name="oci" />
 		<extension name="wishlist" />
-		<extension name="commercefacades" />
+		<extension name="commercefacades" />-->
 
 										
-		<!-- ext-data -->
+		<!-- ext-data 
 		<extension name="commercesearchsampledata" />
 		<extension name="apparelstore" />
 		<extension name="electronicsstore" />
 		<extension name="b2bacceleratorsampledata" />
 		<extension name="instoresampledata" />
-
+-->
 										
-		<!-- ext-content -->
+		<!-- ext-content 
 		<extension name="productcockpit" />
 		<extension name="cms2" />
 		<extension name="cms2lib" />
@@ -60,27 +66,27 @@
 		<extension name="importcockpit" />
 		<extension name="classificationsystems" />
 		<extension name="classificationsystemshmc" />
-
+-->
 										
-		<!-- ext-channel -->
+		<!-- ext-channel 
 		<extension name="cscockpit" />
 		<extension name="mobileoptionals" />
 		<extension name="mobileservices" />
 		<extension name="instore" />
-
+-->
 										
-		<!-- ext-addon -->
+		<!-- ext-addon 
 		<extension name="addonsupport" />
 		<extension name="b2ccheckoutaddon" />
-
+-->
 										
-		<!-- ext-print -->
+		<!-- ext-print 
 		<extension name="print" />
 		<extension name="printcockpit" />
 		<extension name="printhmc" />
 
-										
-		<!-- ext-template -->
+						-->				
+		<!-- ext-template 
 		<extension name="ycommercewebservices" />
 		<extension name="ycommercewebserviceshmc" />
 		<extension name="yacceleratorfulfilmentprocess" />
@@ -95,16 +101,16 @@
 		<extension name="yb2bacceleratorstorefront" />
 		<extension name="yb2bacceleratortest" />
 		<extension name="yinstoreinitialdata" />
-
+-->
 										
-		<!-- ext-accelerator -->
+		<!-- ext-accelerator 
 		<extension name="acceleratorservices" />
 		<extension name="acceleratorfacades" />
 		<extension name="acceleratorcms" />
 		<extension name="acceleratorstorefrontcommons" />
 		<extension name="b2bacceleratorfacades" />
 		<extension name="b2bacceleratorservices" />
-
+-->
 				
 	</extensions>
 </hybrisconfig>
