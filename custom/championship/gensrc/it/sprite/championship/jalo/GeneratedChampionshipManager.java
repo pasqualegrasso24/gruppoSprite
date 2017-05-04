@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 4-mag-2017 1.43.50                          ---
+ * --- Generated at 4-mag-2017 22.09.16                         ---
  * ----------------------------------------------------------------
  */
 package it.sprite.championship.jalo;

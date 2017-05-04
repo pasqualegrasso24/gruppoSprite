@@ -48,7 +48,7 @@ public class DefaultRaceChampionshipDao implements RaceChampionshipDao
 	@Override
 	public List<String> retrieveGranPrixCalendar(final String code)
 	{
-		final List<RaceChampionshipModel> raceChampionships = findRaceChampionshipsByCode(code);
+		/*final List<RaceChampionshipModel> raceChampionships = findRaceChampionshipsByCode(code);
 		if (raceChampionships.isEmpty())
 		{
 			throw new UnknownIdentifierException("RaceChampionship with code '" + code + "' not found!");
@@ -61,11 +61,11 @@ public class DefaultRaceChampionshipDao implements RaceChampionshipDao
 		final RaceChampionshipModel result = raceChampionships.get(0);
 		final List<String> toReturn = new LinkedList<String>();
 		final Collection<GranPrixModel> granPrix = result.getGranPrix();
-		for (final GranPrixModel granPrixModel : granPrix)
-		{
-			toReturn.add(granPrixModel.getDate());
-		}
-		return toReturn;
+		
+		 * for (final GranPrixModel granPrixModel : granPrix) { toReturn.add(granPrixModel.getDate()); }
+		 
+		return toReturn;*/
+		return null;
 	}
 
 }

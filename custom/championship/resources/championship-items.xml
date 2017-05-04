@@ -113,7 +113,7 @@
 	                    <description>Laps</description>
 	                    <persistence type="property" />
 	                </attribute>
-	                <attribute qualifier="date" type="java.utils.Date">
+	                <attribute qualifier="date" type="java.util.Date">
 	                    <description>Date</description>
 	                    <persistence type="property" />
 	                </attribute>
