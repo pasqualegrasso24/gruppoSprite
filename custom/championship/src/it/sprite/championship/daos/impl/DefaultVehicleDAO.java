@@ -9,18 +9,15 @@ import de.hybris.platform.servicelayer.search.FlexibleSearchService;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-import it.sprite.championship.daos.VehicleDAO;
+import it.sprite.championship.daos.VehicleDao;
 import it.sprite.championship.model.VehicleModel;
 
 
-/**
- * @author soprasteria
- *
- */
-public class DefaultVehicleDAO implements VehicleDAO
+@Component(value = "vehicleDAO")
+public class DefaultVehicleDao implements VehicleDao
 {
-
 
 	@Autowired
 	private FlexibleSearchService flexibleSearchService;
@@ -28,18 +25,27 @@ public class DefaultVehicleDAO implements VehicleDAO
 	@Override
 	public List<VehicleModel> findVehicles()
 	{
-		// YTODO Auto-generated method stub
-
-		// Build a query for the flexible search.
 		final String queryString = //
-				"SELECT {vehicle:" + VehicleModel.PK + "} "//
-						+ "FROM {" + VehicleModel._TYPECODE + " AS vehicle} ";
+				"SELECT {v:" + VehicleModel.PK + "} "//
+						+ "FROM {" + VehicleModel._TYPECODE + " AS v} ";
 
 		final FlexibleSearchQuery query = new FlexibleSearchQuery(queryString);
-
+		// Return the list of StadiumModels.
 		return flexibleSearchService.<VehicleModel> search(query).getResult();
-
 	}
 
+	@Override
+	public List<VehicleModel> findVehiclesByCode(final String code)
+	{
+		final String queryString = //
+				"SELECT {v:" + VehicleModel.PK + "}" //
+						+ "FROM {" + VehicleModel._TYPECODE + " AS v} "//
+						+ "WHERE " + "{v:" + VehicleModel.CODE + "}=?code ";
+
+		final FlexibleSearchQuery query = new FlexibleSearchQuery(queryString);
+		query.addQueryParameter("code", code);
+
+		return flexibleSearchService.<VehicleModel> search(query).getResult();
+	}
 
 }

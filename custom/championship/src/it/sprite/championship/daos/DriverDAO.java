@@ -1,6 +1,3 @@
-/**
- *
- */
 package it.sprite.championship.daos;
 
 import java.util.List;
@@ -8,12 +5,10 @@ import java.util.List;
 import it.sprite.championship.model.DriverModel;
 
 
-/**
- * @author soprasteria
- *
- */
 public interface DriverDAO
 {
-	List<DriverModel> findGranPrix();
-}
 
+	List<DriverModel> findDrivers();
+
+	List<DriverModel> findDriversByCode(String code);
+}

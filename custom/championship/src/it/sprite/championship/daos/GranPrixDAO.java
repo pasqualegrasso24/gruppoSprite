@@ -8,11 +8,11 @@ import java.util.List;
 import it.sprite.championship.model.GranPrixModel;
 
 
-/**
- * @author soprasteria
- *
- */
 public interface GranPrixDAO
 {
+
 	List<GranPrixModel> findGranPrix();
+
+
+	List<GranPrixModel> findGranPrixByCode(String code);
 }
