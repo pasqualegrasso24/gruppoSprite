@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 4-mag-2017 0.27.29                          ---
+ * --- Generated at 4-mag-2017 1.43.50                          ---
  * ----------------------------------------------------------------
  */
 package it.sprite.championship.constants;
