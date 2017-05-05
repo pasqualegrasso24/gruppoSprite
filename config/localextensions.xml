@@ -17,6 +17,8 @@
 		<extension name="platformhmc" />
 		<extension name="mediaconversion" />
 		<extension name="championship" />
+		<extension name="championshiprace" />
+		<extension name="championshipfrontend" />
 		<!-- ext-platform <extension name="admincockpit" /> <extension name="backoffice" 
 			/> <extension name="cockpit" /> <extension name="hmc" /> <extension name="mcc" 
 			/> <extension name="platformhmc" /> -->
